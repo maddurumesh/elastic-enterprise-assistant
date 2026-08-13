@@ -9,92 +9,92 @@
 <body>
 <header class="topbar">
   <div>
-    <h1>Elastic Enterprise Assistant</h1>
-    <p>Enterprise knowledge assistant</p>
+    <h1>✨ Elastic Enterprise Assistant</h1>
+    <p>🚀 Intelligent knowledge assistant powered by AI</p>
   </div>
-  <button id="logoutBtn" class="btn secondary hidden">Logout</button>
+  <button id="logoutBtn" class="btn secondary hidden">🚪 Logout</button>
 </header>
 
 <main class="container">
   <div id="message" class="message hidden"></div>
 
   <section id="authSection" class="auth-grid">
-    <div class="card">
-      <h2>Login</h2>
-      <p class="muted">Login to access the assistant.</p>
+    <div class="card gradient-card">
+      <h2>🔐 Login</h2>
+      <p class="muted">Welcome back! Access your knowledge base.</p>
       <form id="loginForm">
-        <label>Email</label>
+        <label>📧 Email</label>
         <input id="loginEmail" type="email" required placeholder="umesh@gmail.com">
-        <label>Password</label>
-        <input id="loginPassword" type="password" required placeholder="Password">
-        <button class="btn" type="submit">Login</button>
+        <label>🔑 Password</label>
+        <input id="loginPassword" type="password" required placeholder="••••••••">
+        <button class="btn primary-gradient" type="submit">🚀 Login</button>
       </form>
     </div>
 
-    <div class="card">
-      <h2>Register</h2>
-      <p class="muted">Create an account.</p>
+    <div class="card gradient-card-alt">
+      <h2>🌟 Register</h2>
+      <p class="muted">Start your journey with us today.</p>
       <form id="registerForm">
-        <label>Full name</label>
+        <label>👤 Full name</label>
         <input id="registerName" required placeholder="Your name">
-        <label>Email</label>
+        <label>📧 Email</label>
         <input id="registerEmail" type="email" required placeholder="name@example.com">
-        <label>Password</label>
-        <input id="registerPassword" type="password" required placeholder="Password">
-        <button class="btn" type="submit">Register</button>
+        <label>🔑 Password</label>
+        <input id="registerPassword" type="password" required placeholder="••••••••">
+        <button class="btn secondary-gradient" type="submit">🎉 Register</button>
       </form>
     </div>
   </section>
 
   <section id="dashboardSection" class="hidden">
     <div class="status-row">
-      <div class="status-card"><span>Backend</span><strong id="backendStatus">Checking...</strong></div>
-      <div class="status-card"><span>Database</span><strong>MySQL</strong></div>
-      <div class="status-card"><span>Search</span><strong>Elasticsearch</strong></div>
-      <div class="status-card"><span>AI / RAG</span><strong>Bedrock + RAG</strong></div>
+      <div class="status-card pulse-card"><span>⚡ Backend</span><strong id="backendStatus">Checking...</strong></div>
+      <div class="status-card pulse-card"><span>🗄️ Database</span><strong>MySQL</strong></div>
+      <div class="status-card pulse-card"><span>🔍 Search</span><strong>Elasticsearch</strong></div>
+      <div class="status-card pulse-card"><span>🧠 AI / RAG</span><strong>Bedrock + RAG</strong></div>
     </div>
 
     <div class="main-grid">
-      <section class="card">
-        <h2>Upload Knowledge Document</h2>
-        <p class="muted">Upload a document for chunking, embeddings and indexing.</p>
+      <section class="card vibrant-card">
+        <h2>📤 Upload Knowledge Document</h2>
+        <p class="muted">Upload documents for intelligent indexing and retrieval.</p>
         <form id="uploadForm">
           <input id="fileInput" type="file" required>
-          <button class="btn" type="submit">Upload Document</button>
+          <button class="btn primary-gradient" type="submit">📎 Upload Document</button>
         </form>
         <div id="uploadResult" class="result-box hidden"></div>
       </section>
 
-      <section class="card">
-        <h2>Ask the Assistant</h2>
-        <p class="muted">Answers are generated from your knowledge base.</p>
+      <section class="card vibrant-card-alt">
+        <h2>💬 Ask the Assistant</h2>
+        <p class="muted">Get AI-powered answers from your knowledge base.</p>
         <form id="askForm">
           <textarea id="questionInput" rows="4" required
-            placeholder="Example: How many paid leave days do employees receive?"></textarea>
-          <button class="btn" type="submit">Ask Question</button>
+            placeholder="💡 Example: How many paid leave days do employees receive?"></textarea>
+          <button class="btn secondary-gradient" type="submit">🤖 Ask Question</button>
         </form>
 
         <div id="answerBox" class="answer-box hidden">
-          <h3>Answer</h3>
+          <h3>📝 Answer</h3>
           <div id="answerText"></div>
         </div>
 
         <div id="sourcesBox" class="sources-box hidden">
-          <h3>Sources</h3>
+          <h3>📚 Sources</h3>
           <div id="sourcesList"></div>
         </div>
       </section>
     </div>
 
-    <section class="card">
+    <section class="card vibrant-card">
       <div class="section-title">
         <div>
-          <h2>Knowledge Base</h2>
-          <p class="muted">Documents/chunks indexed in Elasticsearch.</p>
+          <h2>📚 Knowledge Base</h2>
+          <p class="muted">Indexed documents and chunks in Elasticsearch.</p>
         </div>
-        <button id="refreshKnowledgeBtn" class="btn secondary" type="button">Refresh</button>
+        <button id="refreshKnowledgeBtn" class="btn secondary-gradient" type="button">🔄 Refresh</button>
       </div>
-      <div id="knowledgeList"><p class="muted">Click Refresh.</p></div>
+      <div id="knowledgeList"><p class="muted">Click Refresh to load content.</p></div>
     </section>
   </section>
 </main>
