@@ -112,3 +112,16 @@ When a user asks a question:
 
 GitHub:
 https://github.com/maddurumesh/elastic-enterprise-assistant
+## Screenshots
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+### RAG Answer
+
+![RAG Answer](docs/screenshots/rag-answer.png)
+
+### Grounded Response
+
+![Unsupported Question](docs/screenshots/unsupported-question.png)
