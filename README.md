@@ -108,3 +108,7 @@ When a user asks a question:
                            |
                            v
                    Answer + Sources
+## Repository
+
+GitHub:
+https://github.com/maddurumesh/elastic-enterprise-assistant
